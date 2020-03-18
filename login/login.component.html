@@ -1,0 +1,138 @@
+<!--<h1 *ngIf='invalidlogin'>{{errormessage}}</h1>
+
+<div>
+Username: <input type="text" name="username" [(ngModel)]="username"><br>
+Password: <input type="password" name="password" [(ngModel)]="password"><br>
+
+<button (click)=handlelogin()>Login</button> 
+<button >Register</button>
+</div>-->
+
+
+<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a  class="navbar-brand" href="#" ><img src=""/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+       <ul  class="nav navbar-nav navbar-right">
+        
+      
+      <ul class="nav navbar-nav navbar-right"></ul>
+      <button (click)=register()>Register</button> 
+         
+            <button (click)=handlelogin()>Login</button> 
+     
+    
+
+   
+<br>
+
+
+<div class="jumbotron">
+  <div class="container text-center">
+      <!--<form method="GET" action="{{site.baseurl}}/search-results.html"><br>
+      -->
+     
+        <input type="text"  id="search" placeholder="Search by city, hostel, or neighborhood" autocomplete="yes" required="" class="search-input form-control" name="query"   span class="search-span glyphicon glyphicon-search" > <br> 
+        <button type="button" id="search-span" style="background-color:rgb(21, 97, 184)" >Search</button>
+     
+    </div>
+    
+<div class="container-fluid bg-3 text-center">    
+  <h3></h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+    <div class = "zoom">
+        <a href ="#"> <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="width:100%" alt="Avatar" class="image" >
+        </a>
+      </div> 
+        <h1>ABC Girls Hostel</h1>
+      <h4>Nizampet</h4>
+    
+  </div>
+    <div class="col-sm-3"> 
+        <div class = "zoom">
+            <a href="https://www.apple.com/ "> <img src="https://res.cloudinary.com/hostelling-internation/image/upload/t_hostel_carousel/f_auto,q_auto/v1565973406/kwunkr44mtjdrqrzz3s7.jpg"  style="width:100%" alt="Avatar" class="image" >
+   </a>
+   </div>
+   <h1>Friends Mens Hostel</h1>
+     <h4>Kukatpally</h4>
+  
+    </div>
+    
+         
+    <div class="col-sm-3"> 
+        <div class = "zoom">
+      <a href ="#" >  <img src="https://pix10.agoda.net/hotelImages/1165482/-1/781e60570bbaa427b4afa9d66b7d500d.jpg?s=1024x768" class="img-responsive" style="width:100%" alt="Image"></a>
+      </div>
+      <h1>Apalya Girls Hostel</h1>
+      <h4>Lb Nagar</h4>
+    
+    </div>
+    <div class="col-sm-3">
+        <div class = "zoom">
+      <a href ="#" >  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwunHsERlY3zuoUe36BidEbkgRdqFdbN1IzQxj8KxpqjIYoBU7" class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+      <h1>Raybo Girls Hostel</h1>
+      <h4>Ameerpet</h4>
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+        <div class = "zoom">
+      <a href ="#" >  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvItZhhOVw8TUl4_n6-Ot4J0YOdMdSXeJDZxHumtzw6tqpbfwe" class"img-responsive" style="width:100%" alt = "Image"></a>
+    </div>
+    <h1>DS Reddy Mens Hostel</h1>
+    <p>Punjagutta</p>
+    </div>
+    <div class="col-sm-3"> 
+        <div class = "zoom">
+            <img src="https://images.prismic.io/thepeoplehostel/8d8267fec621703812c0a1bda81a82cb0ebcf8f3_dormof4_thepeoplehostel_2alpes.jpg?auto=compress,format" class="img-responsive" style="width:100%" alt="Image">
+    </div><br>
+    <h1>Vellis Womens Hostel</h1>
+    <h4>Abids</h4>
+    </div>  
+    <div class="col-sm-3"> 
+        <div class = "zoom">
+      <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/07/Qinglian-Youth-Hostel.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <h1>aksh Mens Hostel</h1>
+    <p>Hi-Tech City</p>
+    </div>
+    <div class="col-sm-3">
+        <div class = "zoom">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/51/0f/6e/yeah-barcelona-hostel.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <h1>PAVS Mens Hostel</h1>
+    <p>Secunderabad</p>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; INN private limted </p>
+  <div class="social">
+      <a class="fa fa-twitter" title="Twitter" target="_blank" href="https://twitter.com/login"></a>
+      <a class="fa fa-facebook" title="facebook" target="_blank" href="https://www.facebook.com/"></a>
+      <a class="fa fa-instagram" title="Instagram" target="_blank" href="https://www.Instagram.com/"></a>
+      
+    </div>
+   
+</footer>
